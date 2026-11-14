@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: 0 2rem;
+}
+
+form {
+  max-width: 100%;
+}
+
+fieldset {
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+fieldset legend {
+  text-align: center;
+}
+
+.formTitle {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.formTitle span {
+  font-size: 0.5em;
+}
+
+.input-group {
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.input-group > input {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 1rem 0.5rem;
+}
+
+.input-group > span {
+  text-align: center;
+}
+
+.input-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.input-row > input {
+  width: 6rem;
+  padding: 1rem 0;
+}
+
+.userTerms input[type="checkbox"] {
+  width: 0.5rem;
+}
+
+form button[type="submit"],
+button[type="reset"] {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 1rem 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #0440de;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+}

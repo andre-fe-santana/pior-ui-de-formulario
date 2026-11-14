@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Pior UI do Mundo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <form method="post">
+
+        <h3 class="formTitle">
+            <span>(Tente)</span> Cadastrar Usuário
+        </h3>
+
+        <fieldset>
+            <legend>Informações Gerais</legend>
+            <div class="input-group">
+                <label for="userPhoto" class="inputLabel">Foto de Perfil</label>
+                <input type="file" name="userPhoto" accept="image/*" required>
+            </div>
+            <div class="input-group">
+                <label for="userName" class="inputLabel">Digite seu nome completo</label>
+                <input type="text" name="userName" placeholder="Digite seu nome" maxlength="15" required>
+            </div>
+            <div class="input-group">
+                <label for="birthDate" class="inputLabel">Data de Nascimento</label>
+                <div class="input-row">
+                    <input type="number" name="birthDay" placeholder="Dia" required>
+                    <input type="number" name="birthMonth" placeholder="Mês" required>
+                    <input type="number" name="birthYear" placeholder="Ano" required>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="telField" class="inputLabel">Celular</label>
+                <input type="range" name="telField" id="telField" min="900000000" max="999999999" required>
+                <span class="telValue"></span>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sua Conta</legend>
+            <div class="input-group">
+                <label for="userEmail">Seu Email</label>
+                <input type="email" name="userEmail" id="userEmail" placeholder="nome@dominio.com">
+            </div>
+            <div class="input-group">
+                <label for="userPassword">Crie sua senha</label>
+                <input type="password" name="userPassword" id="userPassword" placeholder="8 caracteres, 1 Letra Maiúscula, 1 letra miníscula, 1 número">
+            </div>
+            <div class="input-group">
+                <label for="confirmPassword">Confirme sua senha</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Repita as informações no campo acima">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Termos de Compromisso</legend>
+                <div class="input-group">
+                    <span class="userTerms">
+                        <input type="checkbox">
+                        <label for="userTerms">Eu concordo com os termos de usuário e a política de privacidade</label>
+                    </span>                
+                </div>
+            </div>
+        </fieldset>
+
+        <button type="reset">Resetar</button>
+        <button type="submit">Cadastrar</button>
+        </form>
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
