@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,42 +16,48 @@
 
         <fieldset>
             <legend>Informações Gerais</legend>
-            <div class="input-group">
+            <div class="input-group" id="userPhoto">
                 <label for="userPhoto" class="inputLabel">Foto de Perfil</label>
-                <input type="file" name="userPhoto" accept="image/*" required>
+                <input type="file" name="userPhotoInput" accept="image/*" required>
             </div>
             <div class="input-group">
                 <label for="userName" class="inputLabel">Digite seu nome completo</label>
                 <input type="text" name="userName" placeholder="Digite seu nome" maxlength="15" required>
+                <span class="errorMsg"></span>
             </div>
-            <div class="input-group">
+            <div class="input-group" id="birthDate">
                 <label for="birthDate" class="inputLabel">Data de Nascimento</label>
                 <div class="input-row">
                     <input type="number" name="birthDay" placeholder="Dia" required>
                     <input type="number" name="birthMonth" placeholder="Mês" required>
                     <input type="number" name="birthYear" placeholder="Ano" required>
                 </div>
+                <span class="errorMsg"></span>           
             </div>
-            <div class="input-group">
+            <div class="input-group" id="telField">
                 <label for="telField" class="inputLabel">Celular</label>
-                <input type="range" name="telField" id="telField" min="900000000" max="999999999" required>
+                <input type="range" name="telField" id="telFieldInput" min="900000000" max="999999999" required>
                 <span class="telValue"></span>
+                <span class="errorMsg"></span>
             </div>
         </fieldset>
 
         <fieldset>
             <legend>Sua Conta</legend>
             <div class="input-group">
-                <label for="userEmail">Seu Email</label>
-                <input type="email" name="userEmail" id="userEmail" placeholder="nome@dominio.com">
+                <label for="userEmailInput">Seu Email</label>
+                <input type="email" name="userEmail" id="userEmailInput" placeholder="nome@dominio.com">
+                <span class="errorMsg"></span>
             </div>
-            <div class="input-group">
+            <div class="input-group" id="userPassword">
                 <label for="userPassword">Crie sua senha</label>
-                <input type="password" name="userPassword" id="userPassword" placeholder="8 caracteres, 1 Letra Maiúscula, 1 letra miníscula, 1 número">
+                <input type="password" name="userPassword" id="userPasswordInput" placeholder="8 caracteres, 1 Letra Maiúscula, 1 letra miníscula, 1 número">
+                <span class="errorMsg"></span>
             </div>
-            <div class="input-group">
+            <div class="input-group" id="confirmPassword">
                 <label for="confirmPassword">Confirme sua senha</label>
-                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Repita as informações no campo acima">
+                <input type="password" name="confirmPassword" id="confirmPasswordInput" placeholder="Repita as informações no campo acima">
+                <span class="errorMsg">a</span>
             </div>
         </fieldset>
 

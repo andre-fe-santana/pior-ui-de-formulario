@@ -54,6 +54,15 @@ fieldset legend {
   padding: 1rem 0.5rem;
 }
 
+.errorMsg {
+  display: none;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: red;
+  font-weight: bold;
+  text-align: left;
+}
+
 .input-group > span {
   text-align: center;
 }
